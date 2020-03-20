@@ -1,24 +1,4 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset ('css/style.css') }}">
-    <title>Les articles</title>
-</head>
-<body>
-    <header id="header">
-        <div >
-            <img  class="logo" src="https://i.pinimg.com/originals/90/7b/48/907b48a1a28c817fcde3de84e03ecda0.png" alt="">
-        </div>
-        <ul class="nav">
-            <li><a href="#header">header</a></li>
-            <li><a href="#articles">articles</a></li>
-            <li><a href="#footer">footer</a></li>
-        </ul>
-    </header>
+{% include 'common/_header.html.twig' %}
     <main>
         <h1>Mes articles</h1>
         <section1>
@@ -35,12 +15,6 @@
 
         </section1>
     </main>
-    <footer id="footer">
-        <ul class="nav2">
-            <li><a href="#header">header</a></li>
-            <li><a href="#articles">articles</a></li>
-            <li><a href="#footer">footer</a></li>
-        </ul>
-    </footer>
+{% include 'common/_footer.html.twig' %}
 </body>
 </html>
