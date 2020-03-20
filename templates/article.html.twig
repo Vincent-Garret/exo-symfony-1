@@ -1,4 +1,6 @@
-{% include 'common/_header.html.twig' %}
+{% extends 'base.html.twig' %}
+
+{% block content %}
     <main>
         <div id ="articles" class="article">
             <p>{{ article.title }}</p>
@@ -7,4 +9,4 @@
         </div>
         <a href="{{ 'home' }}">Accueil</a>
     </main>
-{%  include 'common/_footer.html.twig' %}
+{% endblock %}
