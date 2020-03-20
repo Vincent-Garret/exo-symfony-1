@@ -23,14 +23,16 @@
         <h1>Mes articles</h1>
         <section1>
             <div class=" articles" id="articles">
-                {% for article in articles %}
+                {% for key, article in articles %}
                     <div class="article">
                         <p>{{ article.title }}</p>
                         <p>{{ article.content }}</p>
                         <img src="{{ article.image }}" alt="">
+                        <a href="{{ path ('article', {'id': key }) }}">article complet</a>
                     </div>
                 {% endfor %}
             </div>
+
         </section1>
     </main>
     <footer id="footer">
