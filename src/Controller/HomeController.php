@@ -11,9 +11,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/affiche", name="affiche")
+     * @Route("/home", name="home")
      */
-    public function affiche()
+    public function home()
     {
         $articles = [
             1 => [
@@ -60,9 +60,9 @@ class HomeController extends AbstractController
 
 
         /**
-         * @Route("/article{id}", name="article")
+         * @Route("/article/{id}", name="article")
          */
-    public function article(Request $request, $id)
+    public function article($id)
     {
         $articles = [
             1 => [
@@ -104,8 +104,7 @@ class HomeController extends AbstractController
         ];
         $article= $articles[$id];
         return $this->render('article.html.twig', [
-            'article' => $article,
-            'id' => key($articles)
+            'article' => $article
 
         ]);
     }
