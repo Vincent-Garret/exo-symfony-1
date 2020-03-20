@@ -1,0 +1,36 @@
+h1{
+    color: #8959A8;
+    text-align: center;
+}
+header, footer{
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8959A8;
+}
+.logo{
+    width: 130px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    list-style-type: none;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.nav2{
+    text-align: center;
+}
+.article{
+    text-align: center;
+}
+footer{
+    justify-content: center;
+}
